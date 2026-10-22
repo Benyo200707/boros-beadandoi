@@ -48,7 +48,7 @@ eloadokRouter.get("/:id", async (req, res) => {
             albumok: albumRows
         });
     }   catch (e) {
-        console.error("Adatbázis hiba történt:", e); // EZT A SORT ADD HOZZÁ!
+        console.error("Adatbázis hiba történt:", e);
         res.status(500).json({ error: e.message });
     }
     
