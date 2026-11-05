@@ -26,7 +26,7 @@ router.get('/', async (req, res) => {
 
     res.json(eredmeny);
   } catch (err) {
-    // Kiírjuk a VS Code termináljába is a pontos hibát, hogy lásd!
+    
     console.error("Szerver hiba:", err.message);
     res.status(500).json({ error: err.message || "Ismeretlen hiba tortent az adatbazisban" });
   }
