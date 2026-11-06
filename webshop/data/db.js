@@ -6,6 +6,7 @@ const pool = mysql.createPool({
   password: '',
   port: 3307,
   database: 'webshop',
+  dateStrings: true
 });
 
 export default pool;
