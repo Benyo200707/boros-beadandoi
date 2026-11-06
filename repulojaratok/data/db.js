@@ -4,7 +4,9 @@ const pool = mysql.createPool({
   host: 'localhost',
   user: 'root',
   password: '',
-  database: 'konyvtar'
+  port: 3307,
+  database: 'jaratok',
+  dateStrings: true,
 });
 
 export default pool;
