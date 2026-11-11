@@ -12,11 +12,11 @@ router.get('/', async (req, res) => {
 
         if (varos) {
             
-            const sql = "SELECT * FROM gazdak WHERE varos = ?";
+            const sql = "SELECT nev FROM gazdak WHERE varos = ? ORDER BY nev ASC";
             [rows] = await db.execute(sql, [varos]);
         } else {
             
-            const sql = "SELECT * FROM gazdak ORDER BY nev DESC";
+            const sql = "SELECT * FROM gazdak ORDER BY nev ASC";
             [rows] = await db.execute(sql);
         }
 
