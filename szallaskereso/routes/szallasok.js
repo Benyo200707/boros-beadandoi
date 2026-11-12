@@ -75,7 +75,6 @@ router.get("/", async (req, res) => {
     }
 });
 
-// Egy szállás ID alapján
 router.get("/:id", async (req, res) => {
     try {
         const id = Number(req.params.id);
