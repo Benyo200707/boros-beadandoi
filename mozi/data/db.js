@@ -5,7 +5,7 @@ const pool = mysql.createPool({
     user: `root`,
     password: ``,
     database: `mozi`,
-    port: 3307,
+    port: 3306,
     dateString: true
 })
 
